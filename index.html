@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container-fluid">  <!--Fluid containers-->
+        <!--Create a Custom Heading-->
+        <div class="row">
+            <!--Replace the class red-text to text-primary-->
+            <div class="col-xs-8"><h2 class="text-primary text-center">CatPhotoApp</h2></div> <!--Text Center-->
+        
+            <!-- <p>Click here for <a href="#">cat photos</a>.</p> -->
+        
+            <!--Substitute the class smaller-image to img-responsive-->
+            <div class="col-xs-4"><a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a></div>
+        </div>
+        <img class="img-responsive" src="https://bit.ly/fcc-running-cats" alt="Cats running"> <!--Images Mobile Responsive-->
+
+        <!--Bootstrap Grid to Put Elements Side By Side-->
+        <div class="row">
+            <div class="col-xs-4"><button class="btn btn-primary btn-block"><i class="fas fa-thumbs-up"></i> Like</button></div> <!--Bootstrap Button: btn btn-default, Block Element Bootstrap Button: btn-block, Button Color Rainbow: btn-primary-->
+            <div class="col-xs-4"><button class="btn btn-info btn-block"><i class="fas fa-info-circle"></i> Info</button></div> <!--Call out Optional Actions with btn-info-->
+            <div class="col-xs-4"><button class="btn btn-block btn-danger"><i class="fas fa-trash"></i> Delete</button></div> <!--Warn for a Dangerous Action with btn-danger-->
+        </div>
+
+        <p>Things cats <span class="text-danger">love</span>:</p> <!--Use a span to Target Inline Elements-->
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <p>Top 3 things cats hate:</p>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <!--Responsively Style Radio Buttons-->
+            <div class="row">
+                <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Indoor</label></div>
+                <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Outdoor</label></div>
+            </div>
+            <!--Responsively Style Checkboxes-->
+            <div class="row">
+                <div class="col-xs-4"><label><input type="checkbox" name="personality"> Loving</label></div>
+                <div class="col-xs-4"><label><input type="checkbox" name="personality"> Lazy</label></div>
+                <div class="col-xs-4"><label><input type="checkbox" name="personality"> Crazy</label></div>
+            </div>
+            <!--Style Text Inputs as Form Controls-->
+            <div class="row">
+                <div class="col-xs-7"><input class="form-control" type="text" placeholder="cat photo URL" required></div>
+                <div class="col-xs-5"><button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
